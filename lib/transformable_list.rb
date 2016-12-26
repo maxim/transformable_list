@@ -16,7 +16,7 @@ class TransformableList
 
     indexes_to_keep = Set.new
 
-    new_items.map.with_index do |new_item, new_index|
+    new_items.each.with_index do |new_item, new_index|
       if existing_index = find_index_and_eliminate_match(new_item)
         if new_index != existing_index
           moves << [:move, @items[existing_index], new_index]
