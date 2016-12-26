@@ -46,7 +46,7 @@ Transformable.new(%(a foo), matcher: -> a, b { a.size == b.size })
 
 The default is `-> a, b { a == b }`.
 
-## In the wild
+## Use case
 
 A use case for this gem could be an ActiveRecord has_many association that maintains a sequential index field. Let's say you have a voting system, and a user would assign all the choices by assigning an array. When you are updating existing choices into new ones, you want to keep most of them intact. You can then use logic like this:
 
