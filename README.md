@@ -41,7 +41,7 @@ Or install it yourself as:
 You can change what items are considered equal by supplying a matcher.
 
 ```ruby
-Transformable.new(%(a foo), matcher: -> a, b { a.size == b.size })
+TransformableList.new(%(a foo), matcher: -> a, b { a.size == b.size })
 ```
 
 The default is `-> a, b { a == b }`.
